@@ -1,0 +1,23 @@
+{
+  "name": "adopt_a_tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/main.scss ./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2filips/adopt-a-tree.git"
+  },
+  "keywords": [],
+  "author": "Filip Surowka",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/2filips/adopt-a-tree/issues"
+  },
+  "homepage": "https://github.com/2filips/adopt-a-tree#readme",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
+}
