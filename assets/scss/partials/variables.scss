@@ -74,7 +74,8 @@ $h6: toRem(14px);
 
 // Font Icons: families
 $font-family-icon: 'icomoon';
-$icon-path: '../font-icons';
+
+
 
 // Font Icons: spacing: left and right
 $icon-spacing: toRem(5px);
@@ -127,5 +128,10 @@ $color-input-placeholder: $gray-titanium;
 // VARIABLES : box-shadow
 
 $box-shadow: 0 toRem(4px) toRem(10px) rgba($black, 0.1);
+
+// -----------------------------------------------
+// VARIABLES : assets path
+$icon-path: '../font-icons';
+$svg-path: '../svg';
 
 
