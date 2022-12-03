@@ -265,33 +265,3 @@ ul > li {
 ul {
     padding-left: 0;
 }
-
-
-.styleguide {
-    background: silver;
-    transition: all 3s;
-    @include mq(smi) {
-        background: red;
-    }
-    @include mq(md) {
-        background-color: gold;
-    }
-    @include mq(lg) {
-        background-color: green;
-    }
-    @media screen and (orientation: landscape) {
-        background-color: deeppink;
-    }
-    @media screen and (orientation: portrait) {
-        background-color: blue;
-    }
-    @media screen and (aspect-ratio: 6/3){
-        background-color: peru;
-    }
-    @media screen and (prefers-color-scheme: dark){
-        background-color: black;
-    }
-    @media screen and (prefers-color-scheme: light){
-        background-color: olive;
-    }
-}
