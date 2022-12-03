@@ -59,10 +59,10 @@ $font-bold: 700;
 $line-height: 1.5;
 
 // Fonts: sizes
-$font-size: 14px;
-$font-size-sm: toRem(12px);
 $font-size-xs: toRem(10px);
-$font-size-lg: 16px;
+$font-size-sm: toRem(12px);
+$font-size: toRem(14px);
+$font-size-lg: toRem(18px);
 
 // Fonts: headings: sizes
 $h1: toRem(24px);
