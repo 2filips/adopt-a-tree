@@ -90,7 +90,7 @@
     background-position: center;
     background-size: cover;
     padding: ($spacing * 1.5);
-    min-height: toRem(400px);
+    min-height: toRem(274px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@
     &-subheading {
         color: $white;
         font-style: italic;
-        font-weight: $font-semi-bold;
+        font-weight: $font-regular;
     }
 }
 
@@ -190,7 +190,7 @@
     }
 
     &-content {
-        padding: ($spacing * 1.5);
+        //padding: ($spacing * 1.5);
         position: relative;
     }
 
