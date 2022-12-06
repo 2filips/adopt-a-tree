@@ -3,4 +3,38 @@
 .content-block-overlay {
     @extend .content-block;
     background-color: rgba($brand-2, 0.5);
+    padding-right: 0;
+}
+
+p {
+    line-height: 1.4 !important;
+}
+
+.banner-leaf {
+    min-height: toRem(521px);
+    background-position: toRem(-135px);
+    align-items: start;
+    line-height: 1;
+    ul{
+        line-height: 19px;
+    }
+    h3, button{
+        margin-right: toRem(15px);
+    }
+}
+
+.cards-slider{
+    display: flex;
+    gap: toRem(27px);
+    overflow: hidden;
+}
+.projects-card{
+    min-width: toRem(285px);
+    .card-banner-img{
+        max-height: toRem(160px);
+    }
+}
+
+.icon-tree-earth-img{
+    max-width: toRem(152px);
 }
