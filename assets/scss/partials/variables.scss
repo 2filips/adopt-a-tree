@@ -56,12 +56,12 @@ $font-semi-bold: 600;
 $font-bold: 700;
 
 // Fonts: line-height:
-$line-height: 1.5;
+$line-height: 1.4;
 
 // Fonts: sizes
-$font-size-xs: toRem(10px);
-$font-size-sm: toRem(12px);
-$font-size: toRem(14px);
+$font-size-xs: toRem(12px);
+$font-size-sm: toRem(14px);
+$font-size: toRem(16px);
 $font-size-lg: toRem(18px);
 
 // Fonts: headings: sizes
@@ -138,11 +138,11 @@ $svg-path: '../svg';
 //// VARIABLES : Media queries breakpoints
 $media-lg: toRem(1200px);
 $media-md: toRem(900px);
-$media-sm: toRem(600px);
+$media-sm: toRem(411px);
 
 $media-lg-max: $media-lg - toRem(1px);
-$media-md-max: $media-md - toRem(900px);
-$media-sm-max: $media-sm - toRem(600px);
+$media-md-max: $media-md - toRem(1px);
+$media-sm-max: $media-sm - toRem(1px);
 
 $grid-column-count: 12;
 $grid-gutter: toRem(7.5px);
