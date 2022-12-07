@@ -1,5 +1,9 @@
 @import "./partials/variables";
 
+
+// ---------------------------------------------
+// HOME
+
 .content-block-overlay {
     @extend .content-block;
     background-color: rgba($brand-2, 0.5);
@@ -38,3 +42,8 @@ p {
 .icon-tree-earth-img{
     max-width: toRem(152px);
 }
+
+// ---------------------------------------------
+//PROJECT-LIST
+
+
