@@ -1,5 +1,5 @@
 @import "./partials/variables";
-
+@import "./partials/buttons";
 
 // ---------------------------------------------
 // HOME
@@ -28,7 +28,6 @@ p {
 }
 
 .cards-slider{
-    display: flex;
     gap: toRem(27px);
     overflow: hidden;
 }
@@ -46,4 +45,31 @@ p {
 // ---------------------------------------------
 //PROJECT-LIST
 
+.project-list{
+    &__hdl{
+        gap: toRem(100px);
+    }
+    &__cards{
+        gap: toRem(20px);
+        .projects-card{
+            max-width: toRem(285px);
+        }
+    }
+}
 
+.card-banner{
+    &-icons{
+        gap: toRem(20px);
+    }
+}
+
+.tab-hdl__icon{
+    font-size: toRem(34px);
+}
+
+.drop-menu{
+    &__btn{
+        min-width: toRem(167px);
+        @include btn-solid($gray-coal, $white, $white, $gray-cloud)
+    }
+}
