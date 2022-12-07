@@ -77,4 +77,20 @@ p {
 // ---------------------------------------------
 //PROJECT-SINGLE
 
-
+.project-single__banner{
+    .at-icon-logo{
+        position: absolute;
+        top: toRem(20px);
+        left: toRem(20px);
+        font-size: toRem(34px);
+        z-index: 43;
+    }
+    &-card{
+        max-width: toRem(369px);
+        max-height: toRem(166px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: toRem(-112px);
+    }
+}
