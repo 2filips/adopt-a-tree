@@ -94,3 +94,9 @@ p {
         bottom: toRem(-112px);
     }
 }
+
+.project-single__content{
+    &-list{
+        padding-top: toRem(140px);
+    }
+}
