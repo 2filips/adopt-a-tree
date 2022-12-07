@@ -99,4 +99,10 @@ p {
     &-list{
         padding-top: toRem(140px);
     }
+    &-desc{
+        p{
+        max-width: toRem(325px);
+        line-height: toRem(19px);
+        }
+    }
 }
