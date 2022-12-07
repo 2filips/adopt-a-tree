@@ -73,3 +73,64 @@ p {
         @include btn-solid($gray-coal, $white, $white, $gray-cloud)
     }
 }
+
+// ---------------------------------------------
+//PROJECT-SINGLE
+
+.project-single__banner{
+    .at-icon-logo{
+        position: absolute;
+        top: toRem(20px);
+        left: toRem(20px);
+        font-size: toRem(34px);
+        z-index: 43;
+    }
+    &-card{
+        max-width: toRem(369px);
+        max-height: toRem(166px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: toRem(-112px);
+    }
+}
+
+.project-single__content{
+    &-list{
+        padding-top: toRem(140px);
+    }
+    &-desc{
+        p{
+        max-width: toRem(325px);
+        line-height: toRem(19px);
+        }
+    }
+    &-adopt{
+        .adopt__carousel{
+            gap: toRem(15px);
+            overflow: hidden;
+        }
+        .adopt__img{
+            min-width: toRem(155px);
+            max-height: toRem(87px);
+        }
+
+        .adopt__input-group{
+            max-width: toRem(178px);
+        }
+        .adopt-trees-label{
+            position: absolute;
+            right: toRem(15px);
+            z-index: 1;
+        }
+        #adopt-trees-input, #adopt-trees-input::-webkit-inner-spin-button, #adopt-trees-input::-webkit-outer-spin-button{
+            padding-left: toRem(15px);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        .adopt-trees-btn{
+            min-width: toRem(178px);
+        }
+    }
+}
