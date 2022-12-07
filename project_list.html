@@ -12,32 +12,158 @@
 <body>
 
 <section class="container-sm">
-    <div class="row">
+    <div class="row margin-reset">
         <div class="project-list col">
-            <div class="project-list__content row">
+            <div class="project-list__content gray-mist-bg spacing-2-t row">
                 <div class="col">
-                    <div class="project-list__hdl tab-hdl row">
-                        <div class="tab-hdl__icon col"></div>
-                        <div class="tab-hdl__title col">Tree Planting Projects</div>
+                    <div class="project-list__hdl tab-hdl row flex flex-justify-space-between">
+                        <div class="tab-hdl__icon">
+                            <span class="at-icon-logo brand-1 spacing-2-l"></span>
+                        </div>
+                        <div class="tab-hdl__title spacing-half-r">
+                            <span class="h1 spacing-r">
+                                Tree Planting Projects
+                            </span>
+                        </div>
                     </div>
 
                     <div class="project-list__drop-menu row">
-                        <nav class="drop-menu">
-                            <button class="drop-menu__btn">
-
+                        <nav class="drop-menu text-right spacing-2-r">
+                            <button class="btn btn--xs drop-menu__btn">
+                                <span class="flex flex-justify-space-between flex-align-center">
+                                    <span class="gray-coal font-regular">FILTER</span>
+                                    <span class="at-icon-chevron-down gray-coal icon-size-xl"></span>
+                                </span>
                             </button>
                         </nav>
                     </div>
 
-                    <div class="project-list__cards">
+                    <div class="project-list__cards flex flex-column flex-align-center spacing-3-t">
+                        <div class="card projects-card">
+                            <div class="card-banner">
+                                <div class="overlay overlay--card-banner"></div>
+                                <img src="assets/img/fern-hands-600px.jpg" alt="Tree Planting at Borneo"
+                                     class="card-banner-img">
+                                <div class="card-banner-content">
+                                    <div class="row-sm flex">
+                                        <div class="col-sm card-location">
+                                            <span class="at-icon-map icon-left" aria-hidden="true"></span>
+                                            <span class="font-size-xs font-bold">Burundi, Africa</span>
+                                        </div>
+                                        <div class="col-sm card-tree-cost flex flex-align-center">
+                                            <span class="at-icon-dollar font-size-sm font-bold"
+                                                  aria-hidden="true"></span>
+                                            <span class="font-size-sm font-bold">1</span>
+                                            <span class="at-icon-leaf icon-right" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
 
+                                    <div class="card-banner-title font-size-sm spacing-t">
+                                        GREENING OF ABANDONED
+                                        COPPER MINE
+                                    </div>
+
+                                    <div class="card-banner-icons flex flex-justify-center">
+                                        <span class="at-icon-droplet"></span>
+                                        <span class="at-icon-atom"></span>
+                                        <span class="at-icon-paw"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content spacing-v spacing-h">
+
+                                <div class="spacing-half-h spacing-half-t">
+                                    <div class="progress-bar">
+                                        <div class="progress-bar-value" style="width: 52%;"></div>
+                                        <div class="row-sm flex card-progress-text flex-align-center">
+                                            <div class="col-sm">52%</div>
+                                            <div class="col-sm card-progress-target flex flex-align-center">
+                                                <span class="show-on-screen-readers spacing-half-r">24000 Trees</span>
+                                                <span class="at-icon-target brand-1 icon-size-xl" aria-hidden="true"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center spacing-2-t">
+                                    <div class="spacing-3-b"></div>
+                                    <a href="#" class="link-action">
+                                        <span class="at-icon-arrow-right link-action-icon"></span>
+                                        <span class="link-action-text font-size-xs text-uppercase spacing-r">Adopt a Tree</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card projects-card">
+                            <div class="card-banner">
+                                <div class="overlay overlay--card-banner"></div>
+                                <img src="assets/img/borneo-tree-planting-600px.jpg" alt="Tree Planting at Borneo"
+                                     class="card-banner-img">
+                                <div class="card-banner-content">
+                                    <div class="row-sm flex">
+                                        <div class="col-sm card-location">
+                                            <span class="at-icon-map icon-left" aria-hidden="true"></span>
+                                            <span class="font-size-xs font-bold">Borneo, Indonesia</span>
+                                        </div>
+                                        <div class="col-sm card-tree-cost flex flex-align-center">
+                                            <span class="at-icon-dollar font-size-sm font-bold"
+                                                  aria-hidden="true"></span>
+                                            <span class="font-size-sm font-bold">1</span>
+                                            <span class="at-icon-leaf icon-right" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-banner-title font-size-sm spacing-t">Afforestation near Coastal
+                                        Forest
+                                    </div>
+
+                                    <div class="card-banner-icons flex flex-justify-center">
+                                        <span class="at-icon-droplet"></span>
+                                        <span class="at-icon-paw"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-content spacing-v spacing-h">
+
+                                <div class="spacing-half-h spacing-half-t">
+                                    <div class="progress-bar">
+                                        <div class="progress-bar-value" style="width: 4%;"></div>
+                                        <div class="row-sm flex card-progress-text flex-align-center">
+                                            <div class="col-sm">4%</div>
+                                            <div class="col-sm card-progress-target flex flex-align-center">
+                                                <span class="show-on-screen-readers spacing-half-r">75000 Trees</span>
+                                                <span class="at-icon-target brand-1 icon-size-xl" aria-hidden="true"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center spacing-2-t">
+                                    <div class="spacing-3-b"></div>
+                                    <a href="#" class="link-action">
+                                        <span class="at-icon-arrow-right link-action-icon"></span>
+                                        <span class="link-action-text font-size-xs text-uppercase spacing-r">Adopt a Tree</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacing"></div>
                     </div>
 
                 </div>
             </div>
 
             <div class="project-list__footer row">
-
+                <footer>
+                    <div class="white-bg flex flex-justify-space-between spacing-v spacing-2-h">
+                        <a href="" class="home-tab-icon gray-titanium icon-size-xxl at-icon-home"></a>
+                        <a href="" class="home-tab-icon gray-lead icon-size-xxl at-icon-leaf"></a>
+                        <a href="" class="home-tab-icon gray-titanium icon-size-xxl at-icon-cart"></a>
+                        <a href="" class="home-tab-icon gray-titanium icon-size-xxl at-icon-user"></a>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
