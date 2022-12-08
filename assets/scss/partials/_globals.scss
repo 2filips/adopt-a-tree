@@ -105,7 +105,7 @@ $border-radius-map: (
 );
 
 @each $border, $border-value in $border-radius-map{
-    .#{border} {
+    .#{$border} {
         border-radius: $border-value;
     }
 }
