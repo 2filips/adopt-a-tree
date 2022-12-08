@@ -106,7 +106,7 @@ $headings-size-map: (
 @each $name, $value in $headings-size-map{
     .#{$name} {
         font-size: $value;
-        //color: $gray-coal;
+        color: $gray-coal;
         line-height: 1.4;
         margin: 0 0 $spacing-2 0;
     }
