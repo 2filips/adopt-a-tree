@@ -11,12 +11,12 @@
 }
 
 .container-sm{
-    .footer{
+    .footer, .account__banner{
         margin-inline: toRem(-20px);
     }
 }
 
-.footer{
+footer.purchase-cart__footer{
     [class*="at-icon-cart"]::after{
         content: '2';
         font-size: $font-size-sm;
@@ -207,9 +207,69 @@ p {
 }
 
 // ---------------------------------------------
+//ACCOUNT
+
+
+// ---------------------------------------------
 //ACCOUNT: BANNER
 
 .account__banner{
     min-height: toRem(315px);
+}
+
+// ---------------------------------------------
+//ACCOUNT: PROJECTS
+
+.projects-list{
+    gap: toRem(20px);
+}
+
+.project{
+    &-btn{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        font-size: toRem(10px);
+    }
+    &__donation, &__trees{
+    gap: toRem(5px);
+    }
+    &__trees [class*="at-icon-leaf"]{
+        position: relative;
+        right: toRem(-1px);
+    }
+}
+
+// ---------------------------------------------
+//ACCOUNT: PAYMENT
+
+.payment-add{
+    &__label{
+    position: absolute;
+    right: toRem(15px);
+    z-index: 1;
+    }
+    &__input, &__input::-webkit-inner-spin-button, &__input::-webkit-outer-spin-button{
+        padding: $btn-padding-v $btn-padding-h-sm;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    .field {
+        gap: toRem(15px);
+    }
+}
+
+// ---------------------------------------------
+//ACCOUNT: PROFILE
+
+.profile-settings{
+    &__photo label{
+        //min-width: toRem(220px);
+    }
+    &__forms textarea{
+        padding-right: toRem(50px);
+        overflow: hidden;
+        resize: none;
+    }
 }
 
