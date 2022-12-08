@@ -8,6 +8,7 @@
     <title>Account: Projects</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="./assets/js/libs/tabby.js" async defer></script>
+    <script src="./assets/js/input-file-custom.js" async defer></script>
 </head>
 <body>
 
@@ -58,7 +59,7 @@
                             </ul>
 
                             <div id="tab-projects" class="">
-                                <div class="projects-list flex flex-column">
+                                <div class="projects-list spacing-3-b flex flex-column">
                                     <div class="projects-list__project project content-block text-center position-relative padding-reset">
                                         <div class="flex flex-justify-space-between spacing">
                                             <div class="project__donation flex flex-column  flex-align-center gray-coal">
@@ -161,7 +162,7 @@
                                                        id="input">
                                             </div>
                                         </div>
-                                        <div class="field flex flex-justify-space-between spacing-half-t">
+                                        <div class="field flex flex-justify-space-between">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
                                                 <label for="input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">MM</label>
@@ -172,27 +173,156 @@
                                             </div>
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
                                                 <label for="input"
-                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">MM</label>
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">YYYY</label>
                                                 <input type="number"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
-                                                       placeholder="XX"
+                                                       placeholder="XXXX"
                                                        id="input">
                                             </div>
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
                                                 <label for="input"
-                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">MM</label>
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">CVC</label>
                                                 <input type="number"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
-                                                       placeholder="XX"
+                                                       placeholder="XXX"
                                                        id="input">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="payment-add__address"></div>
+                                    <div class="payment-add__address text-center">
+                                        <span class="gray-coal font-bold">Add Billing Address</span>
+
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">ADDRESS 1</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder=""
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">ADDRESS 2</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder=""
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">CITY</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder=""
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">PINCODE</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder=""
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">STATE</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder=""
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">COUNTRY</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder=""
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav class="carts__nav spacing-3-b">
+                                        <button class="btn btn--brand-2 full-width" type="button">SAVE CHANGES</button>
+                                    </nav>
                                 </div>
                             </div>
-                            <div id="tab-profile" class="spacing-v">
-                                Content: Profile
+                            <div id="tab-profile" class="">
+                                <div class="profile-settings">
+                                    <div class="profile-settings__photo">
+                                        <div class="field text-center">
+                                            <input type="file" accept="image/*" id="js-demo-input-file" class="input-file">
+                                            <label for="js-demo-input-file" class="btn btn--brand-1 input-file-label">
+                                                <img src="assets/img/avatar/avatar-user.jpg" alt="" class="input-file-img" id="js-demo-input-file-image" width="44" height="44" role="img">
+                                                Change Photo
+                                            </label>
+                                        </div>
+
+                                        <script>
+                                            document.addEventListener("DOMContentLoaded", function() {
+                                                document.getElementById("js-demo-input-file").addEventListener("change", function() {
+                                                    readURL(this, "js-demo-input-file-image");
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                    <div class="profile-settings__forms">
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">FIRST NAME</label>
+                                                <input type="text"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="" value="Jenn"
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">LAST NAME</label>
+                                                <input type="text"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="" value="Davis"
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">EMAIL ID</label>
+                                                <input type="text"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="" value="jenn.davis@gmail.com"
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">BIO</label>
+                                                <textarea type="text"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="" maxlength="195"
+                                                       id="input">I’m an avid trekker and nature lover. I love the great outdoors and planted my first tree at the age of seven. My goal this year is to adopt 500 trees.</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav class="carts__nav spacing-3-b">
+                                        <button class="btn btn--brand-2 full-width" type="button">SAVE CHANGES</button>
+                                    </nav>
+                                </div>
                             </div>
 
                             <script>
