@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Account: Projects</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--    <script src="./assets/js/libs/tabby.js" async defer></script>-->
+    <script src="./assets/js/libs/tabby.js" async defer></script>
 </head>
 <body>
 
@@ -57,7 +57,7 @@
                                 </li>
                             </ul>
 
-                            <div id="tab-projects" class="spacing-v">
+                            <div id="tab-projects" class="">
                                 <div class="projects-list flex flex-column">
                                     <div class="projects-list__project project content-block text-center position-relative padding-reset">
                                         <div class="flex flex-justify-space-between spacing">
@@ -133,8 +133,63 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="tab-payment" class="spacing-v">
-                                Content: Payment
+                            <div id="tab-payment" class="">
+                                <div class="payment-add">
+                                    <div class="payment-add__bank-card text-center">
+                                        <span class="gray-coal font-bold">Add Credit Card</span>
+
+                                        <div class="field spacing-half-t">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="card-holder-input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">CARD
+                                                    HOLDER</label>
+                                                <input type="text"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="Full Name"
+                                                       id="card-holder-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="field">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">CARD
+                                                    NO</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="XXXX-XXXX-XXXX-XXXX"
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                        <div class="field flex flex-justify-space-between spacing-half-t">
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">MM</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="XX"
+                                                       id="input">
+                                            </div>
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">MM</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="XX"
+                                                       id="input">
+                                            </div>
+                                            <div class="payment-add__input-group position-relative flex flex-align-center">
+                                                <label for="input"
+                                                       class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">MM</label>
+                                                <input type="number"
+                                                       class="payment-add__input form-text form-text--sm vertical-align-middle"
+                                                       placeholder="XX"
+                                                       id="input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment-add__address"></div>
+                                </div>
                             </div>
                             <div id="tab-profile" class="spacing-v">
                                 Content: Profile
