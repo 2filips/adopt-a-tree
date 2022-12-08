@@ -170,7 +170,7 @@ textarea{
 .input-file-label{
     font-size: $font-size-lg;
     text-transform: capitalize;
-    padding-inline: ($spacing * 6);
+    padding-inline: ($spacing * 6)!important;
     position: relative;
 }
 
