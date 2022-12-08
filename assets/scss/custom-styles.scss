@@ -106,7 +106,7 @@ p {
 // ---------------------------------------------
 //PROJECT-SINGLE
 
-.project-single__banner{
+.project-single__banner, .account__banner{
     .at-icon-logo{
         position: absolute;
         top: toRem(20px);
@@ -205,3 +205,11 @@ p {
     top: toRem(-5px);
     font-size: toRem(30px);
 }
+
+// ---------------------------------------------
+//ACCOUNT: BANNER
+
+.account__banner{
+    min-height: toRem(315px);
+}
+
