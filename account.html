@@ -5,7 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Account: Projects</title>
+    <title>Account</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav-icon/favicon-16x16.png">
+    <link rel="mask-icon" href="assets/img/fav-icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="./assets/js/libs/tabby.js" async defer></script>
     <script src="./assets/js/input-file-custom.js" async defer></script>
@@ -153,103 +161,103 @@
 
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="card-number-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">CARD
                                                     NO</label>
-                                                <input type="number"
+                                                <input type="number" name="acc-cc-number"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
-                                                       placeholder="XXXX-XXXX-XXXX-XXXX"
-                                                       id="input">
+                                                       placeholder="XXXX-XXXX-XXXX-XXXX" inputmode="numeric" autocomplete="cc-number" maxlength="16"
+                                                       id="card-number-input">
                                             </div>
                                         </div>
                                         <div class="field flex flex-justify-space-between">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="card-exp-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">MM</label>
-                                                <input type="number"
+                                                <input type="number" name="acc-cc-exp-month"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder="XX"
-                                                       id="input">
+                                                       id="card-exp-input">
                                             </div>
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="card-year-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">YYYY</label>
-                                                <input type="number"
+                                                <input type="number" name="acc-cc-exp-year"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder="XXXX"
-                                                       id="input">
+                                                       id="card-year-input">
                                             </div>
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="card-cvc-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">CVC</label>
-                                                <input type="number"
+                                                <input type="number" name="acc-cc-cvc"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder="XXX"
-                                                       id="input">
+                                                       id="card-cvc-input">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="payment-add__address text-center">
                                         <span class="gray-coal font-bold">Add Billing Address</span>
 
-                                        <div class="field">
+                                        <div class="field spacing-half-t">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="address1-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">ADDRESS 1</label>
-                                                <input type="number"
+                                                <input type="text" name="acc-address1"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder=""
-                                                       id="input">
+                                                       id="address1-input">
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="address2-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">ADDRESS 2</label>
-                                                <input type="number"
+                                                <input type="text" name="acc-address2"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder=""
-                                                       id="input">
+                                                       id="address2-input">
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="address-city-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">CITY</label>
-                                                <input type="number"
+                                                <input type="text" name="acc-city"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder=""
-                                                       id="input">
+                                                       id="address-city-input">
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="address-pincode-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">PINCODE</label>
-                                                <input type="number"
+                                                <input type="number" name="acc-pincode"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder=""
-                                                       id="input">
+                                                       id="address-pincode-input">
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="address-state-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">STATE</label>
-                                                <input type="number"
+                                                <input type="text" name="acc-state"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder=""
-                                                       id="input">
+                                                       id="address-state-input">
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="address-country-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">COUNTRY</label>
-                                                <input type="number"
+                                                <input type="text" name="acc-country"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder=""
-                                                       id="input">
+                                                       id="address-country-input">
                                             </div>
                                         </div>
                                     </div>
@@ -280,42 +288,42 @@
                                     <div class="profile-settings__forms">
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="fname-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">FIRST NAME</label>
-                                                <input type="text"
+                                                <input type="text" name="acc-fname"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder="" value="Jenn"
-                                                       id="input">
+                                                       id="fname-input">
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="lname-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">LAST NAME</label>
-                                                <input type="text"
+                                                <input type="text" name="acc-lname"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder="" value="Davis"
-                                                       id="input">
+                                                       id="lname-input">
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="email-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">EMAIL ID</label>
-                                                <input type="text"
+                                                <input type="text" name="acc-email"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder="" value="jenn.davis@gmail.com"
-                                                       id="input">
+                                                       id="email-input">
                                             </div>
                                         </div>
                                         <div class="field">
                                             <div class="payment-add__input-group position-relative flex flex-align-center">
-                                                <label for="input"
+                                                <label for="bio-input"
                                                        class="payment-add__label text-uppercase font-size-xs font-bold gray-cement">BIO</label>
-                                                <textarea type="text"
+                                                <textarea type="text" name="acc-bio"
                                                        class="payment-add__input form-text form-text--sm vertical-align-middle"
                                                        placeholder="" maxlength="195"
-                                                       id="input">I’m an avid trekker and nature lover. I love the great outdoors and planted my first tree at the age of seven. My goal this year is to adopt 500 trees.</textarea>
+                                                       id="bio-input">I’m an avid trekker and nature lover. I love the great outdoors and planted my first tree at the age of seven. My goal this year is to adopt 500 trees.</textarea>
                                             </div>
                                         </div>
                                     </div>
