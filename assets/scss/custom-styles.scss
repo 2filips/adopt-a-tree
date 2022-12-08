@@ -2,6 +2,35 @@
 @import "./partials/buttons";
 
 // ---------------------------------------------
+//GLOBALS
+
+.header{
+    [class*="icon"] {
+        font-size: toRem(34px);
+    }
+}
+
+.container-sm{
+    .footer{
+        margin-inline: toRem(-20px);
+    }
+}
+
+.footer{
+    [class*="at-icon-cart"]::after{
+        content: '2';
+        font-size: $font-size-sm;
+        font-family: sans-serif;
+        position: relative;
+        top: toRem(-17px);
+        left: toRem(2px);
+        color: $red-crimson;
+        font-weight: $font-bold;
+    }
+}
+
+
+// ---------------------------------------------
 // HOME
 
 .content-block-overlay {
@@ -131,6 +160,39 @@ p {
         }
         .adopt-trees-btn{
             min-width: toRem(178px);
+        }
+    }
+}
+
+// ---------------------------------------------
+//PURCHASE: CART
+
+.carts {
+    gap: toRem(20px);
+}
+
+.carts-item{
+    &__img{
+        object-fit: cover;
+        max-width: toRem(90px);
+        min-height: toRem(90px);
+    }
+    &__info{
+        width: 100%;
+    }
+    &__form-group{
+        max-width: toRem(90px);
+        label {
+            //position: absolute;
+            //right: 0;
+            line-height: 1;
+        }
+        input, input::-webkit-inner-spin-button, input::-webkit-outer-spin-button  {
+            max-width: toRem(66px);
+            color: $gray-lead;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
         }
     }
 }
