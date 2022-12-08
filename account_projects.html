@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Account: Projects</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./assets/js/libs/tabby.js" async defer></script>
 </head>
 <body>
 
-<div class="container-sm">
+<div class="container-sm gray-mist-bg">
     <div class="row">
         <div class="col">
             <div class="account">
@@ -34,7 +35,44 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <main class="account__content"></main>
+                        <main class="account__content gray-mist-bg spacing-2-t">
+                            <ul class="tab-block margin-reset" data-tabs="">
+                                <li class="tab-each">
+                                    <a href="#tab-projects" class="tab-each-anchor" data-tabby-default="">
+                                        <span class="at-icon-leaf icon-left-lg" aria-hidden="true"></span>
+                                        <span>Projects</span>
+                                    </a>
+                                </li>
+                                <li class="tab-each">
+                                    <a href="#tab-payment" class="tab-each-anchor">
+                                        <span class="at-icon-card icon-left-lg" aria-hidden="true"></span>
+                                        <span>Payment</span>
+                                    </a>
+                                </li>
+                                <li class="tab-each">
+                                    <a href="#tab-profile" class="tab-each-anchor">
+                                        <span class="at-icon-user icon-left-lg" aria-hidden="true"></span>
+                                        <span>Profile</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div id="tab-projects" class="spacing-v">
+                                Content: Projects
+                            </div>
+                            <div id="tab-payment" class="spacing-v">
+                                Content: Payment
+                            </div>
+                            <div id="tab-profile" class="spacing-v">
+                                Content: Profile
+                            </div>
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", function() {
+                                    var tabs = new Tabby('[data-tabs]');
+                                });
+                            </script>
+                        </main>
                     </div>
                 </div>
                 <div class="row">
