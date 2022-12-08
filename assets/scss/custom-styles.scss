@@ -181,7 +181,7 @@ p {
         width: 100%;
     }
     &__form-group{
-        max-width: toRem(90px);
+        gap: toRem(7px);
         label {
             //position: absolute;
             //right: 0;
@@ -195,4 +195,13 @@ p {
             appearance: none;
         }
     }
+}
+
+// ---------------------------------------------
+//PURCHASE: CART - CARD
+
+.bank-card__icon{
+    position: relative;
+    top: toRem(-5px);
+    font-size: toRem(30px);
 }
