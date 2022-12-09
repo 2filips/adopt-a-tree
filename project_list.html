@@ -31,14 +31,16 @@
                                 <span class="header__title h1 margin-reset">Tree Planting Projects </span>
                             </header>
 
-                            <nav class="project-list__drop-menu drop-menu text-right">
-                                <button class="btn btn--xs drop-menu__btn">
-                                <span class="flex flex-justify-space-between flex-align-center">
-                                    <span class="gray-coal font-regular">FILTER</span>
-                                    <span class="at-icon-chevron-down gray-coal icon-size-xl"></span>
-                                </span>
-                                </button>
+                            <div class="flex flex-justify-end">
+                            <nav class="project-list__drop-menu drop-menu">
+                                    <select class="form-text form-text--select" id="projects-filter">
+                                        <option disabled selected hidden>FILTER</option>
+                                        <option class="font-bold" value="water-conservation">Water Conservation</option>
+                                        <option class="font-bold" value="biodiversity-hotspot">Biodiversity Hotspot</option>
+                                        <option class="font-bold" value="wildlife-zone">Wildlife Zone</option>
+                                    </select>
                             </nav>
+                            </div>
 
                             <div class="project-list__cards flex flex-column flex-align-center spacing-3-v">
                                 <div class="card projects-card">
